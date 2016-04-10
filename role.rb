@@ -9,7 +9,7 @@ class Role
     end
   end
 
-  attr_reader :name, :hotkey, :races, :alignments, :starting_attributes,
+  attr_reader :name, :hotkey, :races, :genders, :alignments, :starting_attributes,
    :attribute_probabilities, :hitpoints, :power, :rand_power
 
   def initialize data
