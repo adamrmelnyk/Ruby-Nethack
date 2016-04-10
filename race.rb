@@ -10,7 +10,7 @@ class Race
     end
   end
 
-  attr_reader :name, :hotkey, :alignments, :hitpoints, :power, :rand_power
+  attr_reader :name, :hotkey, :alignments, :hitpoints, :power
 
   def initialize data
     data.each do |key, value|
