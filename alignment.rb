@@ -7,9 +7,7 @@ class Alignment
   end
 
   def self.all
-    DataLoader.load_file("alignments").map do |data|
-      new data
-    end
+    DataLoader.load_file("alignments").map { |data| new data }
   end
 
   attr_reader :name, :hotkey

@@ -19,9 +19,7 @@ private
 attr_reader :rect
 
   def constrain_floor_area
-    if floor_area > MAX_FLOOR_AREA
-      @width = 50 / height
-    end
+    @width = 50 / height if floor_area > MAX_FLOOR_AREA
   end
 
   def build_room
