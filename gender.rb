@@ -5,9 +5,7 @@ class Gender
   end
 
   def self.all
-    DataLoader.load_file("genders").map do |data|
-      new data
-    end
+    DataLoader.load_file("genders").map { |data| new data }
   end
 
   attr_reader :name, :hotkey

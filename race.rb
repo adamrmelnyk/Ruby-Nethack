@@ -5,9 +5,7 @@ class Race
   end
 
   def self.all
-    DataLoader.load_file("races").map do |data|
-      new data
-    end
+    DataLoader.load_file("races").map { |data| new data }
   end
 
   attr_reader :name, :hotkey, :alignments, :hitpoints, :power

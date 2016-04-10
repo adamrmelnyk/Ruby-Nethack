@@ -8,11 +8,7 @@ class SelectionScreen
   end
 
   def render
-    if random?
-      options[key] = random_item
-    else
-      render_screen
-    end
+    random? ? options[key] = random_item : render_screen
   end
 
 private

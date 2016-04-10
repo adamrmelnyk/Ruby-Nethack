@@ -4,9 +4,7 @@ class Role
   end
 
   def self.all
-    DataLoader.load_file("roles").map do |data|
-      new data
-    end
+    DataLoader.load_file("roles").map { |data| new data }
   end
 
   attr_reader :name, :hotkey, :races, :genders, :alignments, :starting_attributes,

@@ -1,6 +1,6 @@
 title:
-  name: Rhack, a NetHack clone
-  by: by a daring developer
+  name: Ruby hack, a NetHack clone
+  by: Adam Melnyk
   pick_random: "Shall I pick a character's race, role, gender and alignment for you? [ynq]"
 role:
   choosing: Choosing Role
