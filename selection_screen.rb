@@ -55,7 +55,7 @@ private
   def handle_choice choice
      case choice
      when "q" then options[:quit] = true
-     when "*" then options[:key] = random_item
+     when "*" then options[key] = random_item
      else options[key] = item_for_hotkey choice
      end
   end
